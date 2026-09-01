@@ -1,0 +1,10 @@
+---
+const saved = Astro.cookies.get("cw-locale")?.value;
+const locale =
+  saved === "en" || saved === "cn"
+    ? saved
+    : Astro.preferredLocale === "en"
+      ? "en"
+      : "cn";
+return Astro.redirect(`/${locale}/`);
+---
