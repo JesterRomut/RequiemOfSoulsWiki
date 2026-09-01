@@ -2,6 +2,8 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   i18n: {
@@ -17,9 +19,11 @@ export default defineConfig({
       prefixDefaultLocale: true,
     },
   },
+
   markdown: {
     syntaxHighlight: false,
   },
+
   integrations: [
     starlight({
       title: "魂之挽歌 Wiki",
@@ -44,4 +48,6 @@ export default defineConfig({
       ],
     }),
   ],
+
+  adapter: cloudflare(),
 });
