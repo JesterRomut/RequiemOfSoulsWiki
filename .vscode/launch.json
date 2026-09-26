@@ -6,6 +6,20 @@
       "name": "Development server",
       "request": "launch",
       "type": "node-terminal"
+    },
+    {
+      "name": "编译代码并调试网页 (Edge)",
+      "type": "msedge",
+      "request": "launch",
+      "preLaunchTask": "start_task",
+      "postDebugTask": "end_task",
+      "url": "http://localhost:4321",
+      "disableNetworkCache": true,
+      "internalConsoleOptions": "neverOpen",
+      "cwd": "${workspaceFolder}",
+      "timeout": 100000,
+      "runtimeArgs": ["-guest", "--remote-debugging-port=9222"],
+      "skipFiles": ["**/jquery*.min.js", "**/node_modules/**"]
     }
   ]
 }
