@@ -2,8 +2,6 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 
-import cloudflare from "@astrojs/cloudflare";
-
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -70,5 +68,5 @@ export default defineConfig({
     }),
   ],
 
-  adapter: cloudflare({ imageService: "compile" }),
+  // adapter: cloudflare({ imageService: "compile" }),
 });
