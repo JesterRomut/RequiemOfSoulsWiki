@@ -30,7 +30,8 @@ export default defineConfig({
       },
       defaultLocale: "cn",
       editLink: {
-        baseUrl: "https://github.com/JesterRomut/RequiemOfSoulsWiki/edit/main/",
+        baseUrl:
+          "https://github.com/JesterRomut/RequiemOfSoulsWiki/edit/master/",
       },
       customCss: ["./src/styles/main.css"],
       expressiveCode: false,
