@@ -33,6 +33,7 @@ export default defineConfig({
         baseUrl:
           "https://github.com/JesterRomut/RequiemOfSoulsWiki/edit/master/",
       },
+      lastUpdated: true,
       customCss: ["./src/styles/main.css"],
       expressiveCode: false,
       favicon: "/favicon.ico",
